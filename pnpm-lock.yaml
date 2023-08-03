@@ -7,7 +7,7 @@ settings:
 overrides:
   vite: workspace:*
 
-packageExtensionsChecksum: 2a87e01b470616d3b7def19cc0830231
+packageExtensionsChecksum: 4c68f206c7a9d0dbf163a3f8ca45b751
 
 patchedDependencies:
   chokidar@3.5.3:
@@ -174,6 +174,12 @@ importers:
       vue:
         specifier: ^3.3.4
         version: 3.3.4
+
+  example/demo:
+    devDependencies:
+      vite:
+        specifier: workspace:*
+        version: link:../../packages/vite
 
   packages/create-vite:
     devDependencies:
@@ -6846,6 +6852,7 @@ packages:
   /iconv-lite@0.6.3:
     resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==}
     engines: {node: '>=0.10.0'}
+    requiresBuild: true
     dependencies:
       safer-buffer: 2.1.2
     dev: true
@@ -8452,6 +8459,7 @@ packages:
   /pify@4.0.1:
     resolution: {integrity: sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==}
     engines: {node: '>=6'}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -8671,6 +8679,7 @@ packages:
 
   /prr@1.0.1:
     resolution: {integrity: sha512-yPw4Sng1gWghHQWj0B3ZggWUm4qVbPwPFcRG8KyxiU7J2OHFSoEHKS+EZ3fv5l1t9CyCiop6l/ZYeWbrgoQejw==}
+    requiresBuild: true
     dev: true
     optional: true
 
